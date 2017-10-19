@@ -1,0 +1,9 @@
+---
+- name: Copy Opencart files
+  copy: src={{opencart_path}} dest={{opencart_path}} owner=nginx group=nginx mode=0755
+  
+- name: Rename files
+  command: mv {{opencart_path}}{{item}}config-dist.php {{opencart_path}}{{item}}config.php 
+  with_items:   
+   - 
+   - admin/
