@@ -1,3 +1,0 @@
----
-- name: check mysql
-  service: name=mysql state=running

@@ -7,3 +7,6 @@
   with_items:   
    - 
    - admin/
+   
+- name: Set SELinux context
+  command: chcon -R -t httpd_sys_rw_content_t {{opencart_path}}
