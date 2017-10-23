@@ -1,5 +1,5 @@
 ---
-easy_install:
+- easy_install:
     name: pip
     state: latest
     
