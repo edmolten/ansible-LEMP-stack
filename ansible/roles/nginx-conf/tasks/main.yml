@@ -8,3 +8,6 @@
 - name: Copy default configuration
   template: src=default.conf dest=/etc/nginx/conf.d/{{ conf_name }}.conf mode=0644
   notify: Restart nginx.service
+
+- name: Be sure nginx is running and enable
+  service: name=nginx state=started enabled=true
