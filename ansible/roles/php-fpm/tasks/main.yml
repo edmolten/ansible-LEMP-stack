@@ -1,7 +1,7 @@
 ---
 - name: Download setup.ius
   get_url:
-    url: {{ius_url}}
+    url: {{ ius_url }}
     dest: /etc/foo.sh
     mode: 0755
 
@@ -17,7 +17,7 @@
     - php56u-mysql
 
 - name: Copy www.conf file
-  template: src=www.conf.j2 dest={{conf_path}} mode=0644
+  template: src=www.conf.j2 dest={{ conf_path }} mode=0644
  
 - name: Automatic load when boot
   command: systemctl enable php-fpm.service

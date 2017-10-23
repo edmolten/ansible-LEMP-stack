@@ -1,6 +1,6 @@
 ---
 - name: Install Nginx Repository
-  command: rpm -Uivh --replacepkgs {{nginx_repository}}
+  command: rpm -Uivh --replacepkgs {{ nginx_repository }}
 
 - name: Install Nginx
   yum: name=nginx state=latest
