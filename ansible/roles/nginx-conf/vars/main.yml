@@ -5,7 +5,7 @@ conf_port_http: 80
 conf_port_https: 443
 conf_fastcgi_pass: 127.0.0.1:666
 # don't include / in end of path
-conf_root_path: /srv/www/opencart/grupo04.mosorio.me/html
+conf_root_path: /usr/share/nginx/html
 conf_access_log: /var/log/nginx/gxc_access.log main buffer=16k
 conf_ssl_certificate: /etc/pki/tls/certs/fullchain.pem
 conf_ssl_priv_key: /etc/pki/tls/private/privkey.pem
