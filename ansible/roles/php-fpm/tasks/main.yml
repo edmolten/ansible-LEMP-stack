@@ -3,9 +3,7 @@
   template: src=uis.sh dest=/tmp/uis.sh mode=0755
   
 - name: Install repos
-  shell: ius.sh 
-  args:
-    chdir: /tmp/
+  shell: {{ uis_script_path }}
 
 - name: Install php-fpm y php-mysql
   yum: name={{ item }} 
