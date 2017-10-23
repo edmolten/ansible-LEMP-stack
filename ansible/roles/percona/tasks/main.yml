@@ -1,11 +1,11 @@
 ---
 - name: install requirements
   yum: name=$item state=installed
-    with_items: 
-      - gcc
-      - python-devel
-      - python-setuptools
-      - mysql-devel
+  with_items: 
+    - gcc
+    - python-devel
+    - python-setuptools
+    - mysql-devel
         
 - name: download get-pip.py
   get_url: url=https://bootstrap.pypa.io/get-pip.py  dest=/tmp
