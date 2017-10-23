@@ -8,4 +8,4 @@
   command: systemctl enable mysqld.service
 
 - name: Be sure mysqld is running and enable
-  service: name=mysqld state=running enabled=true
+  service: name=mysqld state=started enabled=true
