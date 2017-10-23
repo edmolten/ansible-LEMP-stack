@@ -5,12 +5,7 @@
 - name: Install repos
   shell: ius.sh 
   args:
-    chdir: /tmp
-
-- name: Install yum-utils 
-  yum: name={{ item }} 
-  with_items:    
-    - yum-utils
+    chdir: /tmp/
 
 - name: Install php-fpm y php-mysql
   yum: name={{ item }} 

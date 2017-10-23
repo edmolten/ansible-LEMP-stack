@@ -1,3 +1,2 @@
 ---
-ius_url: "https://setup.ius.io/"
 conf_path: /etc/php-fpm.d/www.conf
