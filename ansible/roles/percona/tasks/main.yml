@@ -30,17 +30,3 @@
 
 - name: Remove the test database
   mysql_db: name=test login_user={{root_db_user}} login_password={{root_db_password}} state=absent
-  
-
-- name: Create new user for Opencart Database and grant privileges
-  mysql_user: name={{opencart_db_user}} password={{opencart_user_password}} host={{ item }} login_user={{root_db_user}} login_password={{root_db_password}} state=present priv:'{{opencart_db_name}}.*:ALL'
-  with_items:   
-   - 127.0.0.1
-   - ::1
-   - localhost  
-  notify:
-   - Restart mysqld.service
-   
-- name: Create database for Opencart
-  mysql_db: name={{opencart_db_name}} login_user={{root_db_user}} login_password={{root_db_password}} state=present
-  
