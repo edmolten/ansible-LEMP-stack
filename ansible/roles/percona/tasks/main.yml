@@ -1,15 +1,3 @@
-- name: download get-pip.py
-  get_url: url=https://bootstrap.pypa.io/get-pip.py  dest=/tmp
-
-- name: install pip
-  command: "python /tmp/get-pip.py"
-
-- name: delete get-pip.py
-  file: state=absent path=/tmp/get-pip.py
-
-- name: Install the Python MySQLB module
-  pip: name=MySQL-python
-  
 - name: Install Percona Repository
   yum: name={{ percona_repository }}
 
