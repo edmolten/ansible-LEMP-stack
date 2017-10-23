@@ -11,7 +11,7 @@
   service: name=mysqld state=running enabled=true
 
 - name: Get temporary pasword
-  command: grep 'temporary password' /var/log/mysqld.log | awk 'END {print $NF}'
+  shell: grep 'temporary password' /var/log/mysqld.log | awk 'END {print $NF}'
   register: temp_root_pass
   
 - name: Update mysql root password
