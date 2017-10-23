@@ -1,4 +1,7 @@
 ---
+- name: Install the Python MySQLB module
+  pip: name=MySQL-python
+  
 - name: Install Percona Repository
   yum: name={{ percona_repository }}
 
