@@ -1,7 +1,8 @@
 ---
-- name: Install pip
-  pip: state=present
-
+easy_install:
+    name: pip
+    state: latest
+    
 - name: Install the Python MySQLB module
   pip: name=MySQL-python
   
