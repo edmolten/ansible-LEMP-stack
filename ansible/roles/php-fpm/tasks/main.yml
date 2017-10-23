@@ -1,6 +1,6 @@
 ---
 - name: Install repos
-  command: "{{ uis_script_path }}"
+  script: "{{ uis_script_path }}"
 
 - name: Install php-fpm y php-mysql
   yum: name={{ item }} 
