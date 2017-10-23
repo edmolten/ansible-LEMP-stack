@@ -1,5 +1,5 @@
 ---
-- hosts: gxc
+- hosts: m2
   sudo: yes
   roles:
   - nginx
