@@ -2,12 +2,8 @@
 - hosts: gxc
   sudo: yes
   roles:
-  - common
-  - percona
   - nginx
+  - nginx-conf
+  - percona
   - php-fpm-55
-  - firewalld
-  # - sample
-  # - nginx-conf
-  # - youtrack
-  # - varnish
+  
