@@ -1,9 +1,6 @@
 ---
 - name: Download setup.ius
-  get_url:
-    url: {{ ius_url }}
-    dest: /etc/foo.sh
-    mode: 0755
+  get_url: url= {{ ius_url }} dest= /etc/foo.sh mode= 0755
 
 - name: Install yum-utils 
   yum: name={{ item }} 
