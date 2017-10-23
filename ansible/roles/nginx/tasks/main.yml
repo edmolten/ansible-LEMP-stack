@@ -12,4 +12,4 @@
   file: path=/srv/www/opencart/grupo04.mosorio.me/html state=directory owner=nginx group=nobody mode=0644
 
 - name: Be sure nginx is running and enable
-  service: name=nginx state=running enabled=true
+  service: name=nginx state=started enabled=true

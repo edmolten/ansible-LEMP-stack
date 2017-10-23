@@ -15,5 +15,5 @@
   command: systemctl enable php-fpm.service
   
 - name: Be sure php-fpm is running and enable
-  service: name=php-fpm state=running enabled=true
+  service: name=php-fpm state=started enabled=true
   
