@@ -5,5 +5,5 @@
   - nginx
   - nginx-conf
   - percona
-  - php-fpm-55
+  - php-fpm
   
